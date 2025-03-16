@@ -1,4 +1,4 @@
-﻿@page
+@page
 @model IndexModel
 @{
     ViewData["Title"] = "Slavic Bestiary";
@@ -70,7 +70,7 @@
                 margin: 0;
                 padding: 10px;
                 background-color: white;
-                border: 1px solid black;
+                border: 1px solid white;
                 font-size: 1.5em; /* Увеличиваем размер шрифта */
                 color: black; /* Цвет названия раздела черный */
                 text-decoration: none; /* Убираем подчеркивание */
@@ -81,24 +81,14 @@
                 color: black; /* Цвет текста черный */
             }
 
-        .side-image {
-            width: 15%; /* Ширина боковых изображений */
-            margin: 10px;
-            height: auto;
-        }
-
-        .side-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+      
     </style>
 </head>
 <body>
-    <header>
-        <h1>Slavic Bestiary</h1>
-        <h2>Славянская мифология</h2>
-    </header>
+        <header>
+            <h1>Slavic Bestiary</h1>
+            <h2>Славянская мифология</h2>
+        </header>
     <hr />
 
     <div class="container">
@@ -122,4 +112,5 @@
         </div>
     </div>
 </body>
+
 </html>
