@@ -1,0 +1,116 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Slavic Bestiary";
+}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="https://fonts.google.com/specimen/Shafarik?lang=ru_Cyrl" rel="stylesheet">
+    <title>@ViewData["Title"]</title>
+    <style>
+        body {
+            font-family: Shafarik, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .icon {
+            margin-top: -50px; /* Поднимем иконку вверх */
+        }
+
+        hr {
+            border: 1px solid black;
+            margin: 20px 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center; /* Центрируем блоки по горизонтали */
+            flex-wrap: wrap; /* Позволяем блокам переноситься на новую строку */
+            margin: 20px auto; /* Убираем отступы слева и справа */
+            max-width: 1200px; /* Ограничиваем максимальную ширину контейнера */
+        }
+
+        .block {
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 5px;
+            margin: 10px;
+            width: 30%; /* Ширина блока */
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+            .block:hover {
+                transform: scale(1.05);
+            }
+
+            .block img {
+                width: 100%;
+                height: auto;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+
+            .block h3 {
+                margin: 0;
+                padding: 10px;
+                background-color: white;
+                border: 1px solid white;
+                font-size: 1.5em; /* Увеличиваем размер шрифта */
+                color: black; /* Цвет названия раздела черный */
+                text-decoration: none; /* Убираем подчеркивание */
+            }
+
+            .block a {
+                text-decoration: none; /* Убираем подчеркивание у ссылок */
+                color: black; /* Цвет текста черный */
+            }
+
+      
+    </style>
+</head>
+<body>
+        <header>
+            <h1>Slavic Bestiary</h1>
+            <h2>Славянская мифология</h2>
+        </header>
+    <hr />
+
+    <div class="container">
+        <div class="block">
+            <a href="/раздел1">
+                <img src="https://i.pinimg.com/736x/33/e1/6f/33e16f746ed1cce2c17738acf27898cb.jpg" alt="Боги" />
+                <h3>Боги</h3>
+            </a>
+        </div>
+        <div class="block">
+            <a href="/раздел2">
+                <img src="https://i.pinimg.com/736x/0c/44/ff/0c44ff38c78875b863e30776895f29e6.jpg" alt="Демоны" />
+                <h3>Демоны</h3>
+            </a>
+        </div>
+        <div class="block">
+            <a href="/раздел3">
+                <img src="https://i.pinimg.com/736x/56/4e/a1/564ea160f68f9a1e113286e35acffca5.jpg" alt="Сущности" />
+                <h3>Сущности</h3>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
