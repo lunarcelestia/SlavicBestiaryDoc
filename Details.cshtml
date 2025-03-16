@@ -1,0 +1,5 @@
+﻿@model SlavicMyths.Models.Phenomenon
+
+<h1>@Model.Name</h1>
+<p>@Model.Description</p>
+<a asp-controller="Phenomena" asp-action="Index" asp-route-type="@Model.Type">Назад</a>
